@@ -4,11 +4,17 @@ body {
 }
 
 h2 {
-  font-size: 28px!important;
+  font-size: 26px!important;
 }
 
 h4 {
   font-size: 22px!important;
+}
+
+.text-box {
+  border: 1px solid #FFD95A;
+  border-radius: 2px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
 a {
@@ -16,18 +22,25 @@ a {
 }
 
 a:hover {
-  color: #4C3D3D!important;
+  color: #FFD95A!important;
 }
 
 .short-link:hover {
-  color: #4C3D3D!important;
+  color: #FFD95A!important;
   font-weight: bold;
 }
 
-
 small {
-  color: #4C3D3D;
   font-style: italic;
+}
+
+
+li{
+  list-style: none;
+}
+
+.bg-container li::before{
+  content: "\1F449   ";
 }
 
 .navbar {
@@ -35,10 +48,16 @@ small {
   padding: 0!important;
 }
 
+.nav-item {
+  margin-left: 200px;
+}
+
 
 .bg-container {
   background-color: #FFF7D4;
   padding-top: 24px;
+  background-image: url("images/background.png");
+  background-repeat: round;
 }
 
 .dropdown-menu {
@@ -50,12 +69,43 @@ small {
   color: white!important;
 }
 
+.dropdown-item:hover {
+  color: #4C3D3D!important;
+}
+
+.nav-link:hover{
+  color: #4C3D3D!important;
+}
+
 #logo {
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
 #img-barres-extension {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
+}
+
+.bookmaker-box {
+  width: 100px;
+  height: 52px;
+  font-size: 14px!important;
+  color: #4C3D3D!important;
+  background-color: #FFD95A!important;
+  border: none!important;
+  pointer-events: none;
+}
+
+.download-button {
+  background-color: #FFD95A!important;
+  border: none!important;
+}
+
+.excel-link {
+  text-decoration: none;
+}
+
+.excel-link:hover {
+  color: #4C3D3D!important;
 }
