@@ -1,61 +1,99 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Le roi de la magouille</title>
+    <title>Le Roi de la Magouille</title>
     <meta name="description" content="Venez découvrez des bons plans simples à appliquer pour gagner plusieurs centaines d'euros. Toutes les explications sont carrées, démontrées et exhaustives.">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 
   <body>
-    <div class="m-4">
-      <h2>BONJOUR À TOUS ET BIENVENUE SUR MON SITE !</h2>
 
-      <p>Pourquoi le roi de la magouille ? Tout simplement parce que ce nom m’amusait et que personne ne l’avait utilisé avant, donc j’ai sauté sur l’occasion.</p>
-      <p><strong>Le roi de la magouille, c’est un site qui recense des bons plans</strong>. Ces bons plans, je vous les explique dans les moindres détails.</p>
-      <p>Mon principe est le suivant : <strong>je fais ce qui fonctionne et je ne laisse rien au hasard</strong>. Ici, il n’y a donc aucune place pour le hasard et la prise de risque.</p>
-      <p><strong>Toutes mes explications sont carrées, démontrées et exhaustives</strong>. Vous pourrez le constater par vous-même en découvrant les différentes pages consacrées aux bons plans.</p>
-      <p>J’ai moi-même appliqué tous ces bons plans depuis l’année dernière. Je les ai partagés avec ma famille et mes amis, et j’ai aidé plusieurs personnes à les appliquer directement.</p>
-      <p>Comme vous l’aurez compris, il n’y a donc aucune magouille sur ce site, et ce malgré son nom. Je laisse cela à d’autres !</p>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" id="logo" alt="Le Roi de la Magouille"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="cashback.html">Cashback, quid ?</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="pieges.html">Pièges à éviter !</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-item dropdown ms-auto">
+          <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tous les bons plans
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pmu.html">Bonus de bienvenue PMU</a></li>
+            <li><a class="dropdown-item" href="bookmakers.html">Combinaison bookmakers</a></li>
+            <li><a class="dropdown-item" href="banques.html">Banques en ligne</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <hr>
+    <div class="bg-container">
+      <div class="container py-4">
+        <h2>BONJOUR À TOUS ET BIENVENUE SUR MON SITE !</h2>
+        <br>
 
-      <h2>POURQUOI AI-JE CRÉÉ CE SITE ?</h2>
+        <p>Pourquoi le Roi de la Magouille ? Tout simplement parce que ce nom m’amusait et que personne ne l’avait utilisé avant, donc j’ai sauté sur l’occasion.</p>
+        <p><strong>Le Roi de la Magouille, c’est un site qui recense des bons plans</strong>. Ces bons plans, je vous les explique dans les moindres détails.</p>
+        <p>Mon principe est le suivant : <strong>je fais ce qui fonctionne et je ne laisse rien au hasard</strong>. Ici, il n’y a donc aucune place pour le hasard et la prise de risque.</p>
+        <p><strong>Toutes mes explications sont carrées, démontrées et exhaustives</strong>. Vous pourrez le constater par vous-même en découvrant les différentes pages consacrées aux bons plans.</p>
+        <p>J’ai moi-même appliqué tous ces bons plans depuis l’année dernière. Je les ai partagés avec ma famille et mes amis, et j’ai aidé plusieurs personnes à les appliquer directement.</p>
+        <p>Comme vous l’aurez compris, il n’y a donc aucune magouille sur ce site, et ce malgré son nom. Je laisse cela à d’autres !</p>
+        <br>
 
-      <p>Il existe énormément de sites de bons plans un peu partout sur le net. Mais mis à part 1 ou 2 qui m’ont aidé, j’ai été globalement déçu, et ce pour 2 raisons principales :</p>
-      <ul>
-        <li>les explications ne sont pas claires, ou bien trop hasardeuses, on s’éparpille dans tous les sens</li>
-        <li>malgré les termes employés, il ne s’agit pas vraiment de bons plans selon moi</li>
-      </ul>
-      <p id="anti-bon-plan">Donc, voici ce qui N’EST PAS un bon plan selon moi :</p>
-      <ul>
-        <li>une magouille quelconque qui joue sur l’excitation du lecteur, en promettant monts et merveilles, ce qui provoque de l’adrénaline dans le cerveau</li>
-        <li>une perte de temps considérable pour gagner quelques noises en retour</li>
-        <li>une prise de risque, même minime</li>
-        <li>quelque chose qui ne marche pas 100% du temps ou dont on n’est pas sûr qu’il rapporte ne serait-ce qu’un peu d’argent</li>
-      </ul>
+        <hr>
 
-      <hr>
+        <h2 id="bon-plan-definition">POURQUOI AI-JE CRÉÉ CE SITE ?</h2>
+        <br>
 
-      <h2>COMMENT JE VOUS EXPLIQUE LES BONS PLANS</h2>
+        <p>Il existe énormément de sites de bons plans un peu partout sur le net. Mais mis à part 1 ou 2 qui m’ont aidé, j’ai été globalement déçu, et ce pour 2 raisons principales :</p>
+        <ul>
+          <li>les explications ne sont pas claires, ou bien trop hasardeuses, on s’éparpille dans tous les sens</li>
+          <li>malgré les termes employés, il ne s’agit pas vraiment de bons plans selon moi</li>
+        </ul>
+        <p>Donc, voici ce qui N’EST PAS un bon plan selon moi :</p>
+        <ul>
+          <li>une magouille quelconque qui joue sur l’excitation du lecteur, en promettant monts et merveilles, ce qui provoque de l’adrénaline dans le cerveau</li>
+          <li>une perte de temps considérable pour gagner quelques noises en retour</li>
+          <li>une prise de risque, même minime</li>
+          <li>quelque chose qui ne marche pas 100% du temps ou dont on n’est pas sûr qu’il rapporte ne serait-ce qu’un peu d’argent</li>
+        </ul>
+        <br>
 
-      <p>Les bons plans que je vous explique sont tous :</p>
-      <ul>
-        <li>uniques</li>
-        <li>exhaustifs</li>
-        <li>simples à appliquer</li>
-        <li>carrés mathématiquement et sans aucune place pour le hasard</li>
-      </ul>
-      <p>Ils fonctionnent de manière absolument certaine, de la même façon que 1 + 1 font 2.</p>
-      <p>La condition principale pour que ces bons plans fonctionnent est de <strong>suivre les explications</strong>. Et c’est tout.</p>
-      <p><strong>C’est ici le point le plus important de cette page : suivre les explications</strong>. Ainsi :</p>
-      <ul>
-        <li>vous ne laisserez aucune place au hasard (je me répète volontairement)</li>
-        <li>il sera impossible de perdre le moins de centime, et au contraire vous gagnerez plusieurs centaines d’euros voire un petit nombre à 4 chiffres (vous dire davantage serait vous mentir)</li>
-      </ul>
-      <p>Vous le verrez, mes bons plans consistent notamment à appliquer des algorithmes simples, profiter des bonus de bienvenue à droite et à gauche, combiner plusieurs sites entre eux…</p>
-      <p>Des bons plans, il en existe pléthores. Je ne prétends absolument pas à l’exhaustivité dans ce domaine, et l’objectif de ce site est d’être en évolution constante.</p>
-      <p>Bref, assez de blabla pour cette page, je vous laisse explorer les autres !</p>
+        <hr>
 
+        <h2>COMMENT JE VOUS EXPLIQUE LES BONS PLANS</h2>
+        <br>
+
+        <p>Les bons plans que je vous explique sont tous :</p>
+        <ul>
+          <li>uniques</li>
+          <li>exhaustifs</li>
+          <li>simples à appliquer</li>
+          <li>carrés mathématiquement et sans aucune place pour le hasard</li>
+        </ul>
+        <p>Ils fonctionnent de manière absolument certaine, de la même façon que 1 + 1 font 2.</p>
+        <p>La condition principale pour que ces bons plans fonctionnent est de <strong>suivre les explications</strong>. Et c’est tout.</p>
+        <p><strong>C’est ici le point le plus important de cette page : suivre les explications</strong>. Ainsi :</p>
+        <ul>
+          <li>vous ne laisserez aucune place au hasard (je me répète volontairement)</li>
+          <li>il sera impossible de perdre le moins de centime, et au contraire vous gagnerez plusieurs centaines d’euros voire un petit nombre à 4 chiffres (vous dire davantage serait vous mentir)</li>
+        </ul>
+        <p>Vous le verrez, mes bons plans consistent notamment à appliquer des algorithmes simples, profiter des bonus de bienvenue à droite et à gauche, combiner plusieurs sites entre eux…</p>
+        <p>Des bons plans, il en existe pléthores. Je ne prétends absolument pas à l’exhaustivité dans ce domaine, et l’objectif de ce site est d’être en évolution constante.</p>
+        <p>Bref, assez de blabla pour cette page, je vous laisse explorer les autres !</p>
+
+      </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
