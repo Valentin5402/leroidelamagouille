@@ -42,53 +42,28 @@
     <div class="bg-container">
       <div class="container py-4">
         <div class="text-box bg-white px-5 py-4">
-          <div id="after_submit"></div>
+          <!-- <div id="after_submit"></div> -->
           <h2 class="mt-4 mb-5">N'hésitez pas à me contacter, je réponds toujours !</h2>
-          <?php
-          $action=$_REQUEST['action'];
-          if ($action=="")    /* display the contact form */
-            {
-            ?>
-              <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                <div class="d-flex justify-content-between mb-2">
-                  <div class="row">
-                    <label class="required mb-2" for="name">Votre prénom</label><br />
-                    <input id="name" class="input ms-2" name="name" type="text" value="" size="25" /><br />
-                    <span id="name_validation" class="error_message"></span>
-                  </div>
-                  <div class="row">
-                    <label class="required mb-2" for="email">Votre mail</label><br />
-                    <input id="email" class="input ms-2" name="email" type="text" value="" size="30" /><br />
-                    <span id="email_validation" class="error_message"></span>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label class="required mb-2" for="message">Message</label><br />
-                  <textarea id="message" class="input ms-2" name="message" rows="5" cols="30"></textarea><br />
-                  <span id="message_validation" class="error_message"></span>
-                </div>
-                <input id="submit-btn" class="btn btn-secondary mb-2" type="submit" value="Envoyer" />
-              </form>
-              <?php
-            }
-          else                /* send the submitted data */
-            {
-            $name=$_REQUEST['name'];
-            $email=$_REQUEST['email'];
-            $message=$_REQUEST['message'];
-            if (($name=="")||($email=="")||($message==""))
-                {
-                echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-                }
-            else{
-                $from="From: $name<$email>\r\nReturn-path: $email";
-                $subject="Message sent using your contact form";
-                mail("youremail@yoursite.com", $subject, $message, $from);
-                echo "Email sent!";
-                }
-            }
-          ?>
-
+          <form id="contact_form" action="envoi.php" method="POST">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="row">
+                <label class="required mb-2" for="name">Votre prénom</label><br />
+                <input id="name" class="input ms-2" name="name" type="text" value="" size="25" /><br />
+                <span id="name_validation" class="error_message"></span>
+              </div>
+              <div class="row">
+                <label class="required mb-2" for="email">Votre mail</label><br />
+                <input id="email" class="input ms-2" name="email" type="text" value="" size="30" /><br />
+                <span id="email_validation" class="error_message"></span>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label class="required mb-2" for="message">Message</label><br />
+              <textarea id="message" class="input ms-2" name="message" rows="5" cols="30"></textarea><br />
+              <span id="message_validation" class="error_message"></span>
+            </div>
+            <input id="submit-btn" class="btn btn-secondary mb-2" type="submit" value="Envoyer" />
+          </form>
         </div>
       </div>
     </div>
