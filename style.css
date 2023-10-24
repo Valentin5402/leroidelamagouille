@@ -9,11 +9,22 @@ h2 {
 
 h4 {
   font-size: 22px!important;
+  position: relative!important;
+  margin-left: 28px;
+  margin-bottom: 18px!important;
+  color: #C07F00!important;
+}
+
+h4::before {
+  position: absolute!important;
+  content: "\1F451";
+  margin-left: -32px;
+  top: -4px;
 }
 
 .text-box {
   border: 1px solid #FFD95A;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
@@ -21,19 +32,17 @@ a {
   color: #C07F00!important;
 }
 
-a:hover {
+a:hover, .short-link:hover {
   color: #FFD95A!important;
 }
 
 .short-link:hover {
-  color: #FFD95A!important;
   font-weight: bold;
 }
 
 small {
   font-style: italic;
 }
-
 
 li{
   list-style: none;
@@ -49,9 +58,8 @@ li{
 }
 
 .nav-item {
-  margin-left: 200px;
+  margin-left: 110px;
 }
-
 
 .bg-container {
   background-color: #FFF7D4;
@@ -65,15 +73,15 @@ li{
   background-color: #C07F00!important;
 }
 
+.dropdown-toggle {
+  font-size: 18px!important;
+}
+
 .dropdown-item {
   color: white!important;
 }
 
-.dropdown-item:hover {
-  color: #4C3D3D!important;
-}
-
-.nav-link:hover{
+.dropdown-item:hover, .nav-link:hover, .excel-link:hover, #submit-btn, .bookmaker-box {
   color: #4C3D3D!important;
 }
 
@@ -91,21 +99,28 @@ li{
   width: 100px;
   height: 52px;
   font-size: 14px!important;
-  color: #4C3D3D!important;
-  background-color: #FFD95A!important;
-  border: none!important;
   pointer-events: none;
 }
 
-.download-button {
+.bookmaker-box, .download-button, #submit-btn {
   background-color: #FFD95A!important;
   border: none!important;
+}
+
+#submit-btn {
+  height: 40px;
 }
 
 .excel-link {
   text-decoration: none;
 }
 
-.excel-link:hover {
-  color: #4C3D3D!important;
+video {
+  display: block;
+  margin: auto;
+}
+
+label {
+  font-size: 20px;
+  color: #C07F00;
 }
