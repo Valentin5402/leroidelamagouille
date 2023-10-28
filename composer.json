@@ -1,0 +1,13 @@
+{
+    "name": "valentin/leroidelamagouille",
+    "description": "Site de bons plans",
+    "type": "project",
+    "minimum-stability": "stable",
+    "config": {
+
+          "platform-check": false
+      },
+    "require": {
+        "mailjet/mailjet-apiv3-php": "^1.6"
+    }
+}
