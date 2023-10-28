@@ -10,11 +10,12 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand navbar-computer fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" alt="Le Roi de la Magouille"></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" alt="Le Roi de la Magouille"></a>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="cashback.html">&#x1F4B0;Cashback, quid ?</a>
             </li>
@@ -24,24 +25,57 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contact.html">&#x1F4DD;Me contacter</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                &#x1F449; Tous les bons plans
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pmu.html">Bonus de bienvenue PMU</a></li>
+                <li><a class="dropdown-item" href="bookmakers.html">Combinaison bookmakers</a></li>
+                <li><a class="dropdown-item" href="banques.html">Banques en ligne</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-        <div class="nav-item dropdown ms-auto">
-          <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            &#x1F449; Tous les bons plans
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="pmu.html">Bonus de bienvenue PMU</a></li>
-            <li><a class="dropdown-item" href="bookmakers.html">Combinaison bookmakers</a></li>
-            <li><a class="dropdown-item" href="banques.html">Banques en ligne</a></li>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-phone fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" alt="Le Roi de la Magouille"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active fs-2" aria-current="page" href="cashback.html">&#x1F4B0;Cashback, quid ?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-2" aria-current="page" href="pieges.html">&#x26A0;Pièges à éviter !</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold fs-2" aria-current="page" href="pmu.html">&#x1F449;Bonus de bienvenue PMU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold fs-2" aria-current="page" href="bookmakers.html">&#x1F449;Combinaison bookmakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold fs-2" aria-current="page" href="banques.html">&#x1F449;Banques en ligne</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link active fs-2" aria-current="page" href="contact.html">&#x1F4DD;Me contacter</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="bg-container">
-      <div class="container py-4">
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+      <div class="container-lg py-4">
+        <div class="text-box bg-white mb-5">
           <h2>PRINCIPES DE BASE</h2>
           <br>
           <p>Ce bon plan consiste à combiner deux choses :</p>
@@ -54,7 +88,7 @@
           <p>Attention, on ne peut le faire qu'une seule fois par personne. De plus, il faut être majeur, domicilié en France et ne pas avoir déjà un compte sur PMU.</p>
         </div>
 
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+        <div class="text-box bg-white mb-5">
           <h2>CASHBACK</h2>
           <br>
           <p>Si vous avez besoin, voici au préalable quelques explications très brèves sur <a href="https://fr.igraal.com/parrainage?parrain=AG_55acf25112502" class="short-link">IGraal</a>, le site de Cashback. <strong>Le Cashback est une part d'un montant qui nous est reversé</strong> (en % ou en €) <strong>lorsqu'on effectue un achat sur un site partenaire</strong> (appelé marchand).</p>
@@ -71,7 +105,7 @@
           <p><a href="pieges.html">En effet, il faut prendre garde à ne pas tomber dans un piège qui peut se résumer en un seul mot : surconsommation.</a></p>
         </div>
 
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+        <div class="text-box bg-white mb-5">
           <h2>OFFRE DE BIENVENUE SUR PMU</h2>
           <br>
           <p>Sur PMU, il y a l'offre suivante valable jusqu’au 31 décembre 2023 : <strong>100€ remboursés en cas de pari perdant</strong>.</p>
@@ -85,7 +119,7 @@
           <p>La théorie étant terminée, place maintenant aux étapes pratiques !</p>
         </div>
 
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+        <div class="text-box bg-white mb-5">
           <h2>ÉTAPES PRATIQUES</h2>
           <br>
           <ol>
@@ -107,7 +141,7 @@
           <p>Bref, de tous les bons plans que j’ai mis en place, c’est vraiment le plus basique et rapide à faire qui soit.</p>
         </div>
 
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+        <div class="text-box bg-white mb-5">
           <h2>CONSEILS SUR LES COTES</h2>
           <br>
           <p>Au sujet des cotes, pour maximiser les chances de gain tout en empochant un minimum d'argent, le mieux est de parier sur une cote comprise entre 1,75 et 2. Peu importe le match et l'équipe, de toute façon on ne fait pas cela pour le sport ! Le plus drôle est d’ailleurs de parier sur une équipe totalement méconnue pour vous, par exemple serbe ou macédonienne, afin de garantir la neutralité absolue de votre pronostic et de ne pas vous prêter au jeu plus longtemps que ce qu’il ne faut !</p>
@@ -115,7 +149,7 @@
           <p>Si vous êtes très casse-cou ou opportuniste, vous êtes bien entendu libre de miser sur une cote supérieure ! Cependant, n’oubliez pas que les cotes sont l’inverse des probabilités : en théorie, une cote de 2 a 1/2 de chances de passer, soit 50 %. Mais une cote de 3 n’a qu’un tiers (1/3) de chances d’être remportée.</p>
         </div>
 
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+        <div class="text-box bg-white">
           <h2>SIMULATION DE GAINS</h2>
           <br>
           <ul>

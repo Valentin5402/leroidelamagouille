@@ -73,60 +73,24 @@
       </div>
     </nav>
 
-    <div class="bg-container pb-5 contact-form-computer">
+    <div class="bg-container p-5 confirmation-mail-computer">
       <div class="container-lg py-5">
-        <div class="text-box bg-white px-5 py-4">
-          <!-- <div id="after_submit"></div> -->
-          <h2 class="mt-4 mb-5">N'hésitez pas à me contacter, je réponds toujours !</h2>
-          <form id="contact_form" action="envoi.php" method="POST">
-            <div class="d-flex justify-content-between mb-2">
-              <div class="row">
-                <label class="required mb-2" for="name">Votre prénom</label><br />
-                <input id="name" class="input ms-2" name="name" type="text" value="" /><br />
-                <span id="name_validation" class="error_message"></span>
-              </div>
-              <div class="row">
-                <label class="required mb-2" for="email">Votre mail</label><br />
-                <input id="email" class="input ms-2" name="email" type="text" value="" /><br />
-                <span id="email_validation" class="error_message"></span>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label class="required mb-2" for="message">Message</label><br />
-              <textarea id="message" class="input ms-2" name="message" rows="5" cols="30"></textarea><br />
-              <span id="message_validation" class="error_message"></span>
-            </div>
-            <input id="submit-btn" class="btn btn-secondary mb-2" type="submit" value="Envoyer" />
-          </form>
+        <div class="text-box bg-white" id="box-confirmation-mail">
+          <!-- <h2 class="mb-4">&#x2705; Votre mail a bien été envoyé !</h2>
+          <a href="index.html">Continuer sur le site</a> -->
+          <h2 class="mb-4">&#x2757;Visiblement, votre mail n'est pas valide</h2>
+          <a href="contact.html">Revenir au formulaire</a>
         </div>
       </div>
     </div>
 
-    <div class="bg-container contact-form-phone">
+    <div class="bg-container p-5 confirmation-mail-phone">
       <div class="container-lg py-4">
-        <div class="text-box bg-white px-5 py-4">
-          <!-- <div id="after_submit"></div> -->
-          <h2 class="mt-4 mb-5">N'hésitez pas à me contacter, je réponds toujours !</h2>
-          <form id="contact_form" action="envoi.php" method="POST">
-
-              <div class="row">
-                <label class="required mb-2" for="name">Votre prénom</label><br />
-                <input id="name" class="input ms-2" name="name" type="text" value="" /><br />
-                <span id="name_validation" class="error_message"></span>
-              </div>
-              <div class="row">
-                <label class="required mb-2" for="email">Votre mail</label><br />
-                <input id="email" class="input ms-2" name="email" type="text" value="" /><br />
-                <span id="email_validation" class="error_message"></span>
-              </div>
-
-            <div class="row mb-3">
-              <label class="required mb-2" for="message">Message</label><br />
-              <textarea id="message" class="input ms-2" name="message" rows="10" cols="30"></textarea><br />
-              <span id="message_validation" class="error_message"></span>
-            </div>
-            <input id="submit-btn" class="btn btn-secondary mb-2" type="submit" value="Envoyer" />
-          </form>
+        <div class="text-box bg-white" id="box-confirmation-mail">
+          <h2 class="mb-4">&#x2705; Votre mail a bien<br> été envoyé !</h2>
+          <a href="index.html">Continuer sur le site</a>
+          <!-- <h2 class="mb-4">&#x2757;Visiblement, votre mail n'est pas valide</h2>
+          <a href="contact.html">Revenir au formulaire</a> -->
         </div>
       </div>
     </div>

@@ -10,11 +10,12 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand navbar-computer fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" alt="Le Roi de la Magouille"></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" alt="Le Roi de la Magouille"></a>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="cashback.html">&#x1F4B0;Cashback, quid ?</a>
             </li>
@@ -24,25 +25,58 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contact.html">&#x1F4DD;Me contacter</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                &#x1F449; Tous les bons plans
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pmu.html">Bonus de bienvenue PMU</a></li>
+                <li><a class="dropdown-item" href="bookmakers.html">Combinaison bookmakers</a></li>
+                <li><a class="dropdown-item" href="banques.html">Banques en ligne</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-        <div class="nav-item dropdown ms-auto">
-          <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            &#x1F449; Tous les bons plans
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="pmu.html">Bonus de bienvenue PMU</a></li>
-            <li><a class="dropdown-item" href="bookmakers.html">Combinaison bookmakers</a></li>
-            <li><a class="dropdown-item" href="banques.html">Banques en ligne</a></li>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-phone fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" alt="Le Roi de la Magouille"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active fs-2" aria-current="page" href="cashback.html">&#x1F4B0;Cashback, quid ?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-2" aria-current="page" href="pieges.html">&#x26A0;Pièges à éviter !</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold fs-2" aria-current="page" href="pmu.html">&#x1F449;Bonus de bienvenue PMU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold fs-2" aria-current="page" href="bookmakers.html">&#x1F449;Combinaison bookmakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold fs-2" aria-current="page" href="banques.html">&#x1F449;Banques en ligne</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link active fs-2" aria-current="page" href="contact.html">&#x1F4DD;Me contacter</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="bg-container">
-      <div class="container py-4">
-        <div class="text-box bg-white p-4 pb-2 mb-5">
-          <h2>CASHBACK, EST-CE QUE CA SENT LA MAGOUILLE ?</h2>
+      <div class="container-lg py-4">
+        <div class="text-box bg-white mb-5">
+          <h2>CASHBACK, EST-CE QUE ÇA SENT LA MAGOUILLE ?</h2>
           <br>
           <p>Je ne vais pas écrire ici d’article détaillé dédié au fonctionnement du Cashback, car :</p>
           <ul>
@@ -58,7 +92,7 @@
           <p><a href="pieges.html">En effet, il faut prendre garde à ne pas tomber dans un piège qui peut se résumer en un seul mot : surconsommation</a>.</p>
         </div>
 
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+        <div class="text-box bg-white mb-5">
           <h2>LES SITES DE CASHBACK QUE J’UTILISE</h2>
           <br>
           <p>Voici les sites de Cashback que j’utilise : <strong><a href="https://fr.igraal.com/parrainage?parrain=AG_55acf25112502" class="short-link">IGraal</a>, <a href="https://www.poulpeo.com/p/EwAwab" class="short-link">Poulpeo</a>, Ebuyclub*, <a href="https://www.widilo.fr/i/W0EXP6" class="short-link">Widilo</a> et Joko**</strong>.</p>
@@ -78,7 +112,7 @@
           <br>
         </div>
 
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+        <div class="text-box bg-white mb-5">
           <h2>LES BONS D’ACHAT EN MAGASIN</h2>
           <br>
           <p>Certains sites de Cashback offrent des bons d’achat à utiliser en magasin, sur des enseignes bien connues.</p>
@@ -97,7 +131,7 @@
           <br>
         </div>
 
-        <div class="text-box bg-white p-4 pb-2 mb-5">
+        <div class="text-box bg-white">
           <h2>LE CASHBACK DIRECTEMENT AVEC NOTRE CARTE BANCAIRE</h2>
           <br>
           <p>Certains sites offrent la possibilité de relier notre <a href="banques.html" class="short-link">(ou nos !)</a> carte bancaire.</p>
