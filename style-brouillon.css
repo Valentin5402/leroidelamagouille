@@ -129,92 +129,74 @@ h4 {
   .navbar-computer, .contact-form-computer {
     display: none!important;
   }
-/*   .navbar-phone {
+  .navbar-phone {
     height: 150px;
-  } */
-  #logo {
-    height: 56px;
   }
+  #logo {
+    height: 128px;
+  }
+  /* .collapse {
+    max-height: 500px;
+    overflow-y: scroll;
+  } */
   .navbar-toggler {
-    height: 48px!important;
-    width: 48px!important;
+    height: 112px;
+    width: 112px;
     border-color: #C07F00!important;
   }
   .navbar-toggler-icon {
-    height: 32px!important;
-    width: 32px!important;
-   /*  margin-right: auto!important; */
-    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(192,127,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+    height: 76px!important;
+    width: 76px!important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(192,127,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
     border-color: #C07F00!important;
-    right: 4px;
-    position: relative;
-  }
-  .dropdown-menu {
-    right: 12px!important;
   }
   .navbar-nav {
     background-color: #C07F00!important;
-   /*  height: auto; */
-    width: 240px;
-    border-radius: 4px!important;
-    padding-top: 2px!important;
-    padding-bottom: 6px!important;
+    height: auto;
+    width: 650px;
+    border-radius: 4px;
+    padding-top: 12px;
   }
   .nav-item {
-    padding-left: 8px;
-    padding-right: 8px;
-/*     padding-bottom: 4px; */
-    font-size: 16px;
-    margin-bottom: -6px;
-  }
-  .navbar-nav hr {
-    margin-block-start: 0.4em!important;
-    margin-block-end: 0.1em!important;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    font-size: 44px;
   }
   .nav-link {
     color: white!important;
   }
- /*  .collapse, .collapsing {
-    background-color: red;
-    z-index: 1!important;
-  } */
   .bg-container {
-    margin-top: -16px;
+    padding-top: 84px;
     background-color: #FFF7D4;
-  /*   z-index: 3000!important; */
-    position: relative;
-    /* font-size: 1rem; */
+    font-size: 2.5rem;
   }
   .text-box {
-    padding: 24px 24px 12px 24px;
+    padding: 64px 64px 32px 64px;
   }
-  .text-box.mb-5 {
-    margin-bottom: 1rem!important;
-}
-/*   .bg-container p {
-    margin-bottom: 20px!important;
-  } */
+  .bg-container p {
+    margin-bottom: 40px!important;
+  }
   .bg-container ul {
-    margin-bottom: 20px!important;
-    margin-left: -20px!important;
+    margin-bottom: 40px!important;
   }
   .bg-container li {
-    margin-bottom: 8px!important;
+    margin-bottom: 26px!important;
   }
   h2 {
-    font-size: 26px!important;
+    font-size: 65px!important;
   }
   h4 {
-    font-size: 22px!important;
+    font-size: 55px!important;
     position: relative!important;
-    margin-left: 28px;
-    margin-bottom: 18px!important;
+    margin-left: 70px;
+    margin-bottom: 45px!important;
   }
   h4::before {
     position: absolute!important;
     content: "\1F451";
-    margin-left: -32px;
-    top: -4px;
+    margin-left: -80px;
+    top: -10px;
   }
   .small-text {
     line-height: 100%!important;
@@ -223,34 +205,26 @@ h4 {
     width: 100%;
     height: 100%;
   }
-  /* !!! Reprendre à partir de là !!! */
   label {
-    font-size: 18px;
-  }
-  video {
-    width: 100%;
+    font-size: 48px;
   }
   .bookmaker-box {
-    padding-right: -40px!important;
-    width: 84px;
-    height: 50px;
-    font-size: 12px!important;
+    width: 212px;
+    height: 110px;
+    font-size: 30px!important;
     pointer-events: none;
-  }
-  .bookmaker-box.me-3 {
-    margin-right: 0.5rem!important;
   }
   #submit-btn {
     height: auto;
     width: auto;
-    font-size: 20px;
+    font-size: 48px;
   }
   .download-btn {
     height: auto;
     width: auto;
-    padding: 8px!important;
-    font-size: 16px!important;
-    margin-bottom: 16px!important;
+    padding: 20px!important;
+    font-size: 40px!important;
+    margin-bottom: 40px!important;
   }
 /*   #box-confirmation-mail {
     margin-top: 80px;
